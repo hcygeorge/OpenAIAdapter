@@ -1,5 +1,5 @@
 # OpenAIConnector
-It is a high-level interface for accessing ChatGPT and other OpenAI models from both **Official OpenAI** and **Azure OpenAI Service** using python.
+This is a high-level interface for accessing ChatGPT and other OpenAI models from both **Official OpenAI** and **Azure OpenAI Service** using python.
 
 ## Features
 
