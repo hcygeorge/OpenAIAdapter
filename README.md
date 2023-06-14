@@ -5,7 +5,7 @@ This is a high-level interface for accessing ChatGPT and other OpenAI models fro
 
 - Support both OpenAI and Azure
 - Auto retry when an API error occurs
-- Count tokens and costs during connecting
+- Count tokens and costs while connecting
 
 ## Requirements
 - python > 3.7
@@ -59,7 +59,7 @@ if accumulated_cost >= MAX_COST_LIMIT:
     print('Stop your program when the cost reaches MAX_COST_LIMIT.')
 ```
 
-## Embedding Model Usage
+## Embedding API Usage
 
 ```python
 configs = {
