@@ -1,19 +1,24 @@
 # OpenAIConnector
 It is a high-level interface for accessing ChatGPT and other OpenAI models from both **Official OpenAI** and **Azure OpenAI Service** using python.
 
+## Features
+
+- Support both OpenAI and Azure
+- Auto retry when the API fails to response
+- Count tokens and costs during connecting
+
 ## Requirements
-- python>3.7
+- python > 3.7
 
 ## Installation
 ```
 pip install openai
 ```
 
-
 ## ChatCompletion API Usage
 
 ```python
-from openai_adapter import OpenAIConnector
+from openai_connector import OpenAIConnector
 
 # Create chatbot
 configs = {
