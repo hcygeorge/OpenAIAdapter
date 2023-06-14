@@ -4,7 +4,7 @@ It is a high-level interface for accessing ChatGPT and other OpenAI models from 
 ## Features
 
 - Support both OpenAI and Azure
-- Auto retry when the API fails to response
+- Auto retry when an API error occurs
 - Count tokens and costs during connecting
 
 ## Requirements
