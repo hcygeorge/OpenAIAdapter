@@ -38,7 +38,7 @@ class OpenAIConnector():
         exponential_base: float = 2,
         jitter: bool = True,
         max_retries: int = 200,
-        errors: tuple = (openai.error.RateLimitError, openai.error.APIConnectionError),
+        errors: tuple = (openai.error.RateLimitError, openai.error.APIConnectionError, openai.error.APIError),
     ):
         """
         Decorator function that retries the OpenAI API with exponential backoff when an exception is raised.
