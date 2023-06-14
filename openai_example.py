@@ -1,5 +1,5 @@
 #!pip install openai
-from commonlib.openai.openai_adapter import OpenAIAdapter
+from commonlib.openai.openai_adapter import OpenAIConnector
 
 # ChatGPT usage
 configs = {
@@ -8,7 +8,7 @@ configs = {
     'azure_source_name': 'Azure Source Name',
     'azure_api_version': 'Azure API Version'
 }
-chatbot = OpenAIAdapter(configs)
+chatbot = OpenAIConnector(configs)
 
 params = {
 'engine': 'OpenAI Model Name or Azure Deployment Name',
@@ -31,7 +31,7 @@ configs = {
     'azure_source_name': 'Azure Source Name',
     'azure_api_version': 'Azure API Version'
 }
-embed = OpenAIAdapter(configs)
+embed = OpenAIConnector(configs)
 
 vector = embed.get_embedding(
     text="羅技 MX Vertical 垂直滑鼠",

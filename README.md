@@ -28,7 +28,7 @@ configs = {
     'azure_source_name': 'Azure Source Name(only needed when you use Azure)',
     'azure_api_version': 'Azure API Version(only needed when you use Azure)'
 }
-chatbot = OpenAIAdapter(configs)
+chatbot = OpenAIConnector(configs)
 
 # Set model parameters
 params = {
@@ -68,7 +68,7 @@ configs = {
     'azure_source_name': 'Azure Source Name',
     'azure_api_version': 'Azure API Version'
 }
-embed = OpenAIAdapter(configs)
+embed = OpenAIConnector(configs)
 
 vector = embed.get_embedding(
     text="葉黃素膠囊20mg 60粒",
